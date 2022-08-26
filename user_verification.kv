@@ -1,0 +1,250 @@
+<UserVerification>
+    MDBoxLayout:
+        orientation: 'vertical'
+        padding:10
+        spacing:10
+        BackNavigationKey:
+            left_action_items:[["arrow-left-bold-circle-outline",lambda x:root.callback(),"Back"]]
+        MDBoxLayout:
+            orientation: 'horizontal'
+            pos_hint: {"top":1}
+            MDTabs:
+                id:main_tab
+                Tab:
+                    id:generalinfo
+                    icon: "account-box-multiple"
+                    title: "Personal"
+                    orientation:'vertical'
+                    MDBoxLayout:
+                        pos_hint: {"top":1}
+                        orientation: 'vertical'
+                        pos_hint: {"center_x": .5, "center_y": .5}
+                        spacing:20
+                        ElementCard:
+                            orientation: 'vertical'
+                            MDLabel:
+                                text:"General Information"
+                                font_style:"H5"
+                            MDTextField:
+                                id:user_name
+                                pos_hint: {'center_x':0.5 ,'center_y':0.9 }
+                                mode:'rectangle'
+                                color_mode:'custom'
+                                hint_text:'Full Name'
+                                size_hint_x: 0.75
+                                helper_text:'Required'
+                                helper_text_mode:'on_error'
+                                required:True
+                                icon_right_color:app.theme_cls.primary_light
+                            MDTextField:
+                                id:email_address
+                                pos_hint: {'center_x':0.5 ,'center_y':0.9 }
+                                mode:'rectangle'
+                                color_mode:'custom'
+                                hint_text:'E-mail'
+                                size_hint_x: 0.75
+                                helper_text:'Required'
+                                helper_text_mode:'on_error'
+                                required:True
+                                icon_right_color:app.theme_cls.primary_light
+                            MDRaisedButton:
+                                text:"Card Validity"
+                                pos_hint: {'center_x':0.5 ,'center_y':0.5 }
+                                padding:10
+                                on_release: root.show_date_picker()
+                            MDTextField:
+                                id:usercategory
+                                pos_hint: {'center_x': .5, 'center_y': .5}
+                                size_hint_x: None
+                                # size_hint_x: 0.75
+                                hint_text: "Select User Category"
+                                on_focus: if self.focus: root.user_cat.open()  
+                            MDFloatingActionButton:
+                                icon:'database'
+                                padding: 20
+                                md_bg_color:app.theme_cls.primary_light
+                                pos_hint: {'center_x':0.5, 'center_y':0.5 }
+                                on_press:
+                                    root.store_general_information()
+                                    # root.manager.current='welcomescreen'
+                                    # root.manager.transition.direction='right'
+
+                    
+
+                Tab:
+                    id:address_tab
+                    title: "Address"
+                    icon: "map-marker"
+                    orientation:'vertical'
+                    pos_hint:{"top":1}
+                    
+                    MDBoxLayout:
+                        pos_hint: {"top":1}
+                        orientation: 'vertical'
+                        pos_hint: {"center_x": .5, "center_y": .5}
+                        spacing:25
+                        ElementCard:
+                            padding:20
+                            orientation: 'vertical'
+                            MDLabel:
+                                text:"Current Address"
+                                font_size: 22
+                                font_style:"H5"
+                            
+                            MDTextField:
+                                id:permanentaddress
+                                padding:10
+                                # pos_hint: {'center_x':0.5 ,'center_y':0.8 }
+                              
+                                mode:'rectangle'
+                        
+                                color_mode:'custom'
+                                hint_text:'Country'
+                                # size_hint_x: 0.75
+                                helper_text:'Required'
+                                helper_text_mode:'on_error'
+                                icon_right_color:app.theme_cls.primary_light
+                                required:True
+                            MDTextField:
+                                id:province
+                                padding:10
+                                # pos_hint: {'center_x':0.5 ,'center_y':0.8 }
+                                mode:'rectangle'
+                                color_mode:'custom'
+                                hint_text:'Province'
+                                # size_hint_x: 0.75
+                                helper_text:'Required'
+                                helper_text_mode:'on_error'
+                                icon_right_color:app.theme_cls.primary_light
+                                required:True
+                            MDTextField:
+                                id:district
+                                padding:10
+                                mode:'rectangle'
+                                color_mode:'custom'
+                                hint_text:'District'
+                                # size_hint_x: 0.75
+                                helper_text:'Required'
+                                helper_text_mode:'on_error'
+                                icon_right_color:app.theme_cls.primary_light
+                                required:True
+                            MDTextField:
+                                id:Zone
+                                padding:10
+                                mode:'rectangle'
+                                color_mode:'custom'
+                                hint_text:'Zone'
+                                # size_hint_x: 0.75
+                                helper_text:'Required'
+                                helper_text_mode:'on_error'
+                                icon_right_color:app.theme_cls.primary_light
+                                required:True
+                            MDTextField:
+                                id:Municipality
+                                padding:10
+                                # pos_hint: {'center_x':0.5 ,'center_y':0.8 }
+                                mode:'rectangle'
+                                color_mode:'custom'
+                                hint_text:'Municipality/VDC'
+                                # size_hint_x: 0.75
+                                helper_text:'Required'
+                                helper_text_mode:'on_error'
+                                icon_right_color:app.theme_cls.primary_light
+                                required:True
+                            MDTextField:
+                                id:tole
+                                padding:10
+                                # pos_hint: {'center_x':0.5 ,'center_y':0.8 }
+                                mode:'rectangle'
+                                color_mode:'custom'
+                                hint_text:'Tole'
+                                # size_hint_x: 0.75
+
+                                helper_text_mode:'on_error'
+                                icon_right_color:app.theme_cls.primary_light
+                                required:True
+                            MDFloatingActionButton:
+                                icon:"database"
+                                md_bg_color:app.theme_cls.primary_light
+                                pos_hint: {'center_x':0.5, 'center_y':0.2 }
+                                on_press:
+                                    root.store_address_information()
+                                    # root.manager.current='welcomescreen'
+                                    # root.manager.transition.direction='right'
+                    
+                Tab:
+                    id:document_tab
+                    title: "Douments"
+                    icon: "file-document-multiple"
+                    orientation:'vertical'
+                    pos_hint:{"top":1}
+                    MDBoxLayout:
+                        pos_hint: {"top":1}
+                        orientation: 'vertical'
+                        pos_hint: {"center_x": .5, "center_y": .5}
+                        spacing:25
+                        ElementCard:
+                            MDLabel:
+                                text:"Profile Picture"
+                                font_size: 22
+                                font_style:"H5"
+                            ImgBtnLayout:
+                               
+                                ChooseImg:
+                                    on_press:root.pp_file_selection()
+                                FileName:
+                                    id:pp
+                                
+
+                                    
+                
+                        ElementCard:
+                            MDLabel:
+                                text:"Citizenship Front"
+                                font_size: 22
+                                font_style:"H5"
+                            ImgBtnLayout:
+                                ChooseImg:
+                                    on_press:root.citizen_file_selection()
+                                FileName:
+                                    id:Citizenship
+                            
+
+                        ElementCard:
+                            id:idcard
+                            MDLabel:
+                                text:"Fare Discount Identity Card"
+                                font_size: 22
+                                font_style:"H5"
+                            ImgBtnLayout:
+                                cols:2
+                                ChooseImg:
+                                    on_press:root.id_card_file_selection()
+                                FileName:
+                                    id:id_card
+                        MDFloatingActionButton:
+                            icon:"database"
+                            md_bg_color:app.theme_cls.primary_light
+                            pos_hint: {'center_x':0.5, 'center_y':0.2 }
+                            on_press:
+                                root.store_documents_location()
+                                root.manager.current='userhome'
+                                root.manager.transition.direction='right'
+                            
+                            
+
+<ChooseImg@MDFillRoundFlatButton>:
+    text:'Choose Img'
+    md_bg_color:app.theme_cls.primary_dark
+    font_size:18
+    text_color:1,1,1,1
+<FileName@MDLabel>:
+#     text:"File Name and Location"
+    font_size:18
+#     active_line:False
+<ImgBtnLayout@GridLayout>
+    spacing:10
+    cols:1
+<BackNavigationKey@MDToolbar>:
+    
+    elevation:10

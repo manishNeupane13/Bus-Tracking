@@ -1,0 +1,44 @@
+#:import get_color_from_hex kivy.utils.get_color_from_hex
+#:include driverlogin.kv
+#:include driverregister.kv
+#:include driverhomenav.kv
+#:include driverwelcome.kv
+#:include userhome.kv
+#:include viewmap.kv
+#:include busmarker.kv
+#:include verified_user.kv
+#:include user_verification.kv
+#:include route_details.kv
+#:import LoginScreen login.LoginScreen
+#:import RegisterScreen register.RegisterScreen
+#:import DriverNavigation drivernav.DriverNavigation
+#:import UserHome user_home.UserHome
+#:import MapBusView viewmap.MapBusView
+#:import UserVerification user_verification.UserVerification
+#:import VerifiedUser verified_user.VerifiedUser
+#:import route_details route_details.RouteDetails
+
+
+
+ScreenManager:
+    WelcomeScreen:
+        name:'welcomescreen'
+    LoginScreen:
+        name:'userlogin'
+    RegisterScreen:
+        name:'userregister'
+    DriverNavigation:
+        name:'homenav'
+    UserHome:
+        name:'userhome'
+    MapBusView:
+        name:'maplocation'
+    VerifiedUser:
+        name:'verifieduser'
+    UserVerification:
+        name:'userverify'
+    RouteDetails:
+        name:"standinfo"
+    # LogoutScreen:
+    #     name:'userlogout'
+    

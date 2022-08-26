@@ -1,0 +1,258 @@
+<UserHome>  
+    BoxLayout:
+        orientation:'vertical'
+        elevation:10
+        spacing:20
+        
+        MDToolbar:
+            left_action_items:[["account-circle-outline",lambda x:nav_drawer.set_state("open"),""]]
+            elevation:10
+        # MDTextField:
+        #     id:routename
+        #     pos_hint: {'center_x': .5, 'center_y': .6}
+        #     size_hint_x: None
+        #     width:root.width-30
+        #     hint_text: "Route List"
+        #     on_focus: if self.focus: root.route.open()    
+
+        ElementCard:
+            GridLayout:
+                cols:2
+                padding:20
+                spacing:15
+                size:self.parent.width,self.parent.height
+                pos_hint: {'center_x':0.5 , 'center_y': 0.5}
+                    
+                SwipeElementCard:
+                    md_bg_color:58/255,239/255,242/255,0.7
+                    padding:7
+                    MDRoundFlatIconButton:
+                        icon:"bus-marker"
+                        text:"Live Bus"
+                        font_style:"H6"
+                        line_color:(0,0,0,0)
+                        elevation_normal:12
+                        text_color:240/255,12/255,88/255,1
+                        halign:'center'
+                        pos_hint: {'center_x':0.5 , 'center_y': 0.5}
+                        padding_y:15
+                        size: self.parent.width,self.parent.height
+                        on_press:
+                            root.manager.current='maplocation'
+                            root.manager.transition.direction='left'
+                       
+                SwipeElementCard:
+                    md_bg_color:58/255,239/255,242/255,0.7
+                    padding:8
+                   
+                    
+                    MDRoundFlatIconButton:
+                        icon:"bus-stop"
+                        text:"Bus Marker"
+                        font_style:"H6"
+                        elevation_normal:12
+                        text_color:240/255,12/255,88/255,1
+                        line_color:(0,0,0,0)
+                        halign:'center'
+                        size: self.parent.width,self.parent.height
+                        pos_hint: {'center_x':0.5, 'center_y': 0.5}
+                        padding_y:15
+
+                # MDFloatingActionButton:
+                #     icon: "qrcode-scan"
+                #     halign:'center'
+                #     size_hint_y: None
+                #     padding_y:15
+                #     text_color:240/255,12/255/88/255,1
+                #     elevation_normal:12
+                #     pos_hint: {'center_x':0.5 , 'center_y':1}
+
+                SwipeElementCard:
+                    md_bg_color:58/255,239/255,242/255,0.7
+                    padding:8
+
+                    
+                    MDRoundFlatIconButton:
+                        icon:"road"
+                        text:"Bus Stand"
+                        line_color:(0,0,0,0)
+                        elevation_normal:12
+                        font_style:"H6"
+                        text_color:240/255,12/255,88/255,1
+                        size: self.parent.width,self.parent.height
+                        halign:'center'
+                        pos_hint: {'center_x':0.5 , 'center_y': 0.5}
+                        padding_y:15
+                        on_press:
+                            root.manager.current='standinfo'
+                            root.manager.transition.direction='left'
+
+                SwipeElementCard:
+                    md_bg_color:58/255,239/255,242/255,0.7
+                    padding:8
+                    size: "200dp", "100dp"
+                    
+                    MDRoundFlatIconButton:
+                        icon:"currency-inr"
+                        text:"Statement"
+                        line_color:(0,0,0,0)
+                        elevation_normal:12
+                        text_color:240/255,12/255,88/255,1
+                        font_style:"H6"
+                        size: self.parent.width,self.parent.height
+                        halign:'center'
+                        pos_hint: {'center_x':0.5 , 'center_y': 0.5}
+                        padding_y:15
+                SwipeElementCard:
+                    md_bg_color:58/255,239/255,242/255,0.7
+                    padding:8
+                    MDRoundFlatIconButton:
+                        icon: "heart"
+                        text:"Favourite"
+                        line_color:(0,0,0,0)
+                        elevation_normal:12
+                        text_color:240/255,12/255,88/255,1
+                        font_style:"H6"
+                        size: self.parent.width,self.parent.height
+                        halign:'center'
+                        pos_hint: {'center_x':0.5 , 'center_y': 0.5}
+                        padding_y:15
+                SwipeElementCard:
+                    md_bg_color:58/255,239/255,242/255,0.7
+                    padding:8
+                    MDRoundFlatIconButton:
+                        icon:"offer"
+                        text:"Offers"
+                        line_color:(0,0,0,0)
+                        elevation_normal:12
+                        text_color:240/255,12/255,88/255,1
+                        font_style:"H6"
+                        size: self.parent.width,self.parent.height
+                        halign:'center'
+                        pos_hint: {'center_x':0.5 , 'center_y': 0.5}
+                        padding_y:15
+        MDBottomAppBar:
+
+            MDToolbar:
+                icon: "qrcode-scan"
+                type: "bottom"
+                mode: "center"
+                md_bg_color:194/255, 164/255, 245/255,0.8
+                on_action_button:root.sacn_qr()
+
+    MDNavigationDrawer:
+        id:nav_drawer
+        MDBoxLayout:
+            orientation: 'vertical'
+
+            ElementCard: 
+                md_bg_color:220/255,242/255,245/255,1
+                ElementCard:
+                    padding:30
+                    spacing:15
+            
+                    FitImage:
+                        id:ProfileImg
+                        source:'images//logo//new_logo.png'
+                        box_color: 1, 1, 1, .2
+                        pos_hint: {"center_x": .5, "center_y": .5}
+                        size_hint: None, None
+                        size: "120dp", "120dp"
+                        radius:36,36,36,36
+                    MDBoxLayout:
+                        orientation:'vertical'
+                        MDLabel:
+                            id:usernamelbl
+                            font_style:"H6"
+                        MDBoxLayout:
+                            id:identitybox
+                            orientation: 'horizontal'
+                            MDLabel:
+                                id:usercategorylbl
+                                font_style:"H6"
+                            Image:
+                                id:verification_badge
+                                size: '20dp','20dp'
+                MDBoxLayout:
+                    orientation:'vertical'
+                    padding:22
+                    spacing:12
+                    pos_hint: {'center_x':0.5 , 'center_y': 0.5}
+                    SwipeElementCard:
+                        # on_swipe_complete:root.manager.transition.direction='right'
+                    
+
+                        MDRoundFlatIconButton:
+                            icon:"information-variant"
+                            text:"User Information"
+                            line_color:(0,0,0,0)
+                            size: self.parent.width,self.parent.height
+                            font_style:"H5"
+                            size_hint_y: None
+                            on_press:
+                                root.user_information_screen()
+                                
+                            
+                    SwipeElementCard:
+                        MDRoundFlatIconButton:
+                            icon:"currency-inr"
+                            text:"Wallet Information"
+                            line_color:(0,0,0,0)
+                            halign:'center'
+                            size_hint_y: None
+                            elevation_normal:12
+                            font_style:"H5"
+                            size: self.parent.width,self.parent.height
+                            # pos_hint: {'center_x':0.5 , 'center_y': 0.5}
+                            # padding_y:15
+                    SwipeElementCard: 
+                        MDRoundFlatIconButton:
+                            icon:"logout-variant"
+                        
+                            text:"Logout"
+                            line_color:(0,0,0,0)
+                            halign:'center'
+                            size_hint_y: None
+                            elevation_normal:12
+                            font_style:"H5"
+                            size: self.parent.width,self.parent.height
+                            on_press:
+                                root.manager.current='userlogin'
+                                root.manager.transition.direction='right'
+                            # pos_hint: {'center_x':0.5 , 'center_y': 0.5}
+                        # padding_y:15
+                    
+
+        # ContentNavigationDrawer:
+
+
+
+<ContentNavigationDrawer>
+    BoxLayout:
+
+        MDList:
+
+
+
+
+<ElementCard@MDCard>:
+    
+    radius:[25,]
+    md_bg_color:213/255,219/255,218/255,1
+    orientation: 'vertical'
+    elevation:30
+    padding:10
+    spacing:20
+    # ripple_behavior:True
+<SwipeElementCard@MDCardSwipeFrontBox>:
+    radius:[25,]
+    md_bg_color:213/255,219/255,218/255,1
+    orientation: 'vertical'
+    elevation:30
+    padding:10
+
+
+
+
+    # height:nav_drawer.height-20
+    # halign:"center

@@ -1,0 +1,639 @@
+# Check configuration tokens
+# Ensure build layout
+# Check configuration tokens
+# Read available permissions from api-versions.xml
+# Preparing build
+# Check requirements for android
+# Run 'dpkg --version'
+# Cwd None
+Debian 'dpkg' package management program version 1.19.7 (amd64).
+This is free software; see the GNU General Public License version 2 or
+later for copying conditions. There is NO warranty.
+# Search for Git (git)
+#  -> found at /usr/bin/git
+# Search for Cython (cython)
+#  -> found at /home/manes/.local/bin/cython
+# Search for Java compiler (javac)
+#  -> found at /usr/lib/jvm/java-11-openjdk-amd64/bin/javac
+# Search for Java keytool (keytool)
+#  -> found at /usr/lib/jvm/java-11-openjdk-amd64/bin/keytool
+# Install platform
+# Run 'git config --get remote.origin.url'
+# Cwd /mnt/c/Users/HP/Desktop/login/BusTrackingApp/.buildozer/android/platform/python-for-android
+https://github.com/kivy/python-for-android.git
+# Run 'git branch -vv'
+# Cwd /mnt/c/Users/HP/Desktop/login/BusTrackingApp/.buildozer/android/platform/python-for-android
+* master 17ec678c [origin/master] Merge pull request #2638 from misl6/release-2022.07.20
+# Run '/usr/bin/python3 -m pip install -q --user \'appdirs\' \'colorama>=0.3.3\' \'jinja2\' \'six\' \'enum34; python_version<"3.4"\' \'sh>=1.10; sys_platform!="nt"\' \'pep517<0.7.0\' \'toml\''
+# Cwd None
+# Apache ANT found at /home/manes/.buildozer/android/platform/apache-ant-1.9.4
+# Android SDK found at /home/manes/.buildozer/android/platform/android-sdk
+# Recommended android's NDK version by p4a is: 23b
+# Android NDK found at /home/manes/.buildozer/android/platform/android-ndk-r23b
+# Read available permissions from api-versions.xml
+# Run '/usr/bin/python3 -m pythonforandroid.toolchain aab -h --color=always --storage-dir="/mnt/c/Users/HP/Desktop/login/BusTrackingApp/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a" --ndk-api=21 --ignore-setup-py --debug'
+# Cwd /mnt/c/Users/HP/Desktop/login/BusTrackingApp/.buildozer/android/platform/python-for-android
+# Check application requirements
+# Compile platform
+# Run '/usr/bin/python3 -m pythonforandroid.toolchain create --dist_name=myapp --bootstrap=sdl2 --requirements=python3,kivy --arch arm64-v8a --arch armeabi-v7a --copy-libs --color=always --storage-dir="/mnt/c/Users/HP/Desktop/login/BusTrackingApp/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a" --ndk-api=21 --ignore-setup-py --debug'
+# Cwd /mnt/c/Users/HP/Desktop/login/BusTrackingApp/.buildozer/android/platform/python-for-android
+# Build the application #13
+# Copy application source from /mnt/c/Users/HP/Desktop/login/BusTrackingApp
+# Create directory /mnt/c/Users/HP/Desktop/login/BusTrackingApp/.buildozer/android/app
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/busmarker.kv
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/busmarker.py
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/database.py
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/database_conn.py
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/driverhomenav.kv
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/driverlogin.kv
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/drivernav.py
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/driverregister.kv
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/driverwelcome.kv
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/esewapay.py
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/farepayment.kv
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/farepayment.py
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/locationinfo.py
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/login.py
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/main.kv
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/main.py
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/paymentinfo.py
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/register.py
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/route_details.kv
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/route_details.py
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/userhome.kv
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/user_home.py
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/user_verification.kv
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/user_verification.py
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/verified_user.kv
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/verified_user.py
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/viewmap.kv
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/viewmap.py
+# Create directory /mnt/c/Users/HP/Desktop/login/BusTrackingApp/.buildozer/android/app/buildozer
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/buildozer/Dockerfile
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/buildozer/LICENSE
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/buildozer/setup.py
+# Create directory /mnt/c/Users/HP/Desktop/login/BusTrackingApp/.buildozer/android/app/buildozer/build/lib/buildozer
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/buildozer/build/lib/buildozer/jsonstore.py
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/buildozer/build/lib/buildozer/sitecustomize.py
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/buildozer/build/lib/buildozer/target.py
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/buildozer/build/lib/buildozer/__init__.py
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/buildozer/build/lib/buildozer/__main__.py
+# Create directory /mnt/c/Users/HP/Desktop/login/BusTrackingApp/.buildozer/android/app/buildozer/build/lib/buildozer/libs
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/buildozer/build/lib/buildozer/libs/version.py
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/buildozer/build/lib/buildozer/libs/_structures.py
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/buildozer/build/lib/buildozer/libs/__init__.py
+# Create directory /mnt/c/Users/HP/Desktop/login/BusTrackingApp/.buildozer/android/app/buildozer/build/lib/buildozer/scripts
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/buildozer/build/lib/buildozer/scripts/client.py
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/buildozer/build/lib/buildozer/scripts/remote.py
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/buildozer/build/lib/buildozer/scripts/__init__.py
+# Create directory /mnt/c/Users/HP/Desktop/login/BusTrackingApp/.buildozer/android/app/buildozer/build/lib/buildozer/targets
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/buildozer/build/lib/buildozer/targets/android.py
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/buildozer/build/lib/buildozer/targets/ios.py
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/buildozer/build/lib/buildozer/targets/osx.py
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/buildozer/build/lib/buildozer/targets/__init__.py
+# Create directory /mnt/c/Users/HP/Desktop/login/BusTrackingApp/.buildozer/android/app/buildozer/buildozer
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/buildozer/buildozer/jsonstore.py
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/buildozer/buildozer/sitecustomize.py
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/buildozer/buildozer/target.py
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/buildozer/buildozer/__init__.py
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/buildozer/buildozer/__main__.py
+# Create directory /mnt/c/Users/HP/Desktop/login/BusTrackingApp/.buildozer/android/app/buildozer/buildozer/libs
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/buildozer/buildozer/libs/version.py
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/buildozer/buildozer/libs/_structures.py
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/buildozer/buildozer/libs/__init__.py
+# Create directory /mnt/c/Users/HP/Desktop/login/BusTrackingApp/.buildozer/android/app/buildozer/buildozer/scripts
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/buildozer/buildozer/scripts/client.py
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/buildozer/buildozer/scripts/remote.py
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/buildozer/buildozer/scripts/__init__.py
+# Create directory /mnt/c/Users/HP/Desktop/login/BusTrackingApp/.buildozer/android/app/buildozer/buildozer/targets
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/buildozer/buildozer/targets/android.py
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/buildozer/buildozer/targets/ios.py
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/buildozer/buildozer/targets/osx.py
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/buildozer/buildozer/targets/__init__.py
+# Create directory /mnt/c/Users/HP/Desktop/login/BusTrackingApp/.buildozer/android/app/buildozer/buildozer/tools/packer
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/buildozer/buildozer/tools/packer/CHANGELOG
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/buildozer/buildozer/tools/packer/launch
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/buildozer/buildozer/tools/packer/Makefile
+# Create directory /mnt/c/Users/HP/Desktop/login/BusTrackingApp/.buildozer/android/app/buildozer/buildozer/tools/packer/http
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/buildozer/buildozer/tools/packer/http/kivy-icon-96.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/buildozer/buildozer/tools/packer/http/wallpaper.png
+# Create directory /mnt/c/Users/HP/Desktop/login/BusTrackingApp/.buildozer/android/app/buildozer/buildozer.egg-info
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/buildozer/buildozer.egg-info/PKG-INFO
+# Create directory /mnt/c/Users/HP/Desktop/login/BusTrackingApp/.buildozer/android/app/buildozer/docs
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/buildozer/docs/Makefile
+# Create directory /mnt/c/Users/HP/Desktop/login/BusTrackingApp/.buildozer/android/app/buildozer/docs/source
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/buildozer/docs/source/conf.py
+# Create directory /mnt/c/Users/HP/Desktop/login/BusTrackingApp/.buildozer/android/app/buildozer/tests
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/buildozer/tests/test_buildozer.py
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/buildozer/tests/__init__.py
+# Create directory /mnt/c/Users/HP/Desktop/login/BusTrackingApp/.buildozer/android/app/buildozer/tests/scripts
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/buildozer/tests/scripts/test_client.py
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/buildozer/tests/scripts/__init__.py
+# Create directory /mnt/c/Users/HP/Desktop/login/BusTrackingApp/.buildozer/android/app/buildozer/tests/targets
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/buildozer/tests/targets/test_android.py
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/buildozer/tests/targets/test_ios.py
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/buildozer/tests/targets/utils.py
+# Create directory /mnt/c/Users/HP/Desktop/login/BusTrackingApp/.buildozer/android/app/cache
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_10_522_623.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_10_522_624.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_10_522_625.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_10_522_626.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_10_523_623.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_10_523_624.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_10_523_625.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_10_523_626.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_10_524_623.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_10_524_624.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_10_524_625.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_10_524_626.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_10_525_623.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_10_525_624.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_10_525_625.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_10_525_626.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_10_526_623.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_10_526_624.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_10_526_625.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_10_526_626.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_10_753_592.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_10_753_593.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_10_753_594.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_10_753_595.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_10_753_596.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_10_754_592.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_10_754_593.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_10_754_594.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_10_754_595.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_10_754_596.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_10_755_592.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_10_755_593.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_10_755_594.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_10_755_595.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_10_755_596.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_10_756_592.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_10_756_593.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_10_756_594.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_10_756_595.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_10_756_596.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_10_757_592.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_10_757_593.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_10_757_594.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_10_757_595.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_10_757_596.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_11_1508_1186.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_11_1508_1187.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_11_1508_1188.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_11_1508_1189.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_11_1508_1190.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_11_1509_1186.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_11_1509_1187.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_11_1509_1188.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_11_1509_1189.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_11_1509_1190.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_11_1510_1186.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_11_1510_1187.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_11_1510_1188.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_11_1510_1189.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_11_1510_1190.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_11_1511_1186.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_11_1511_1187.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_11_1511_1188.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_11_1511_1189.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_11_1511_1190.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_11_1512_1186.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_11_1512_1187.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_11_1512_1188.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_11_1512_1189.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_11_1512_1190.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_12_3016_2374.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_12_3016_2375.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_12_3016_2376.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_12_3016_2377.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_12_3016_2378.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_12_3017_2374.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_12_3017_2375.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_12_3017_2376.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_12_3017_2377.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_12_3017_2378.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_12_3018_2374.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_12_3018_2375.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_12_3018_2376.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_12_3018_2377.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_12_3018_2378.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_12_3019_2374.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_12_3019_2375.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_12_3019_2376.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_12_3019_2377.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_12_3019_2378.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_12_3020_2374.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_12_3020_2375.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_12_3020_2376.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_12_3020_2377.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_12_3020_2378.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_12_3021_2374.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_12_3021_2375.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_12_3021_2376.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_12_3021_2377.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_12_3021_2378.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_12_3022_2374.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_12_3022_2375.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_12_3022_2376.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_12_3022_2377.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_13_4163_4991.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_13_4163_4992.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_13_4163_4993.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_13_4164_4991.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_13_4164_4992.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_13_4164_4993.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_13_4165_4991.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_13_4165_4992.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_13_4165_4993.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_13_4166_4991.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_13_4166_4992.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_13_4166_4993.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_13_6034_4751.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_13_6034_4752.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_13_6034_4753.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_13_6034_4754.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_13_6035_4750.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_13_6035_4751.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_13_6035_4752.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_13_6035_4753.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_13_6035_4754.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_13_6036_4750.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_13_6036_4751.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_13_6036_4752.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_13_6036_4753.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_13_6036_4754.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_13_6037_4750.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_13_6037_4751.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_13_6037_4752.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_13_6037_4753.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_13_6037_4754.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_13_6037_4755.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_13_6038_4750.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_13_6038_4751.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_13_6038_4752.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_13_6038_4753.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_13_6038_4754.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_13_6038_4755.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_13_6039_4750.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_13_6039_4751.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_13_6039_4752.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_13_6039_4753.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_13_6039_4754.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_13_6039_4755.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_13_6040_4750.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_13_6040_4751.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_13_6040_4752.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_13_6040_4753.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_13_6040_4754.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_13_6040_4755.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_13_6041_4750.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_13_6041_4751.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_13_6041_4752.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_13_6041_4753.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_13_6041_4754.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_13_6041_4755.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_14_12073_9501.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_14_12073_9502.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_14_12073_9503.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_14_12073_9504.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_14_12073_9505.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_14_12073_9506.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_14_12073_9507.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_14_12074_9501.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_14_12074_9502.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_14_12074_9503.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_14_12074_9504.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_14_12074_9505.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_14_12074_9506.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_14_12074_9507.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_14_12075_9501.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_14_12075_9502.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_14_12075_9503.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_14_12075_9504.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_14_12075_9505.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_14_12075_9506.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_14_12075_9507.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_14_12076_9501.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_14_12076_9502.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_14_12076_9503.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_14_12076_9504.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_14_12076_9505.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_14_12076_9506.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_14_12076_9507.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_14_12077_9501.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_14_12077_9502.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_14_12077_9503.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_14_12077_9504.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_14_12077_9505.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_14_12077_9506.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_14_12077_9507.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_14_12078_9502.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_14_12078_9503.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_14_12078_9504.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_14_12078_9505.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_14_12079_9502.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_14_12079_9503.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_14_12079_9504.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_14_12079_9505.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_14_8327_9984.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_14_8328_9982.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_14_8328_9983.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_14_8328_9984.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_14_8329_9982.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_14_8329_9983.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_14_8329_9984.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_14_8330_9982.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_15_16654_19966.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_15_16654_19967.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_15_16654_19968.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_15_16654_19969.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_15_16655_19966.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_15_16655_19967.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_15_16655_19968.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_15_16655_19969.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_15_16656_19966.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_15_16656_19967.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_15_16656_19968.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_15_16656_19969.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_15_16657_19966.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_15_16657_19967.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_15_16657_19968.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_15_16657_19969.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_15_16658_19966.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_15_16658_19967.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_15_16658_19968.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_15_16658_19969.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_15_24148_19010.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_15_24148_19011.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_15_24148_19012.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_15_24148_19013.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_15_24149_19010.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_15_24149_19011.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_15_24149_19012.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_15_24149_19013.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_15_24150_19010.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_15_24150_19011.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_15_24150_19012.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_15_24150_19013.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_15_24151_19006.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_15_24151_19007.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_15_24151_19008.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_15_24151_19009.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_15_24151_19010.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_15_24151_19011.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_15_24151_19012.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_15_24151_19013.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_15_24152_19006.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_15_24152_19007.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_15_24152_19008.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_15_24152_19009.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_15_24152_19010.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_15_24152_19011.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_15_24152_19012.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_15_24152_19013.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_15_24153_19006.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_15_24153_19007.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_15_24153_19008.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_15_24153_19009.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_15_24154_19006.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_15_24154_19007.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_15_24154_19008.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_15_24154_19009.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_15_24155_19006.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_15_24155_19007.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_15_24155_19008.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_15_24155_19009.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_16_48298_38021.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_16_48298_38022.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_16_48298_38023.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_16_48298_38024.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_16_48299_38021.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_16_48299_38022.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_16_48299_38023.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_16_48299_38024.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_16_48300_38021.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_16_48300_38022.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_16_48300_38023.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_16_48300_38024.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_16_48301_38021.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_16_48301_38022.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_16_48301_38023.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_16_48301_38024.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_16_48302_38016.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_16_48302_38021.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_16_48302_38022.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_16_48302_38023.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_16_48302_38024.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_16_48303_38013.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_16_48303_38014.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_16_48303_38015.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_16_48303_38016.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_16_48303_38017.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_16_48303_38021.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_16_48303_38022.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_16_48303_38023.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_16_48303_38024.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_16_48304_38013.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_16_48304_38014.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_16_48304_38015.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_16_48304_38016.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_16_48304_38017.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_16_48305_38013.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_16_48305_38014.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_16_48305_38015.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_16_48305_38016.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_16_48305_38017.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_16_48306_38013.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_16_48306_38014.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_16_48306_38015.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_16_48306_38016.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_16_48306_38017.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_16_48307_38013.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_16_48307_38014.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_16_48307_38015.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_16_48307_38016.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_16_48307_38017.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_17_66622_79867.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_17_66622_79868.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_17_66622_79869.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_17_66623_79867.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_17_66623_79868.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_17_66623_79869.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_17_66624_79868.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_17_66624_79869.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_17_96599_76044.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_17_96599_76045.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_17_96599_76046.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_17_96600_76043.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_17_96600_76044.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_17_96600_76045.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_17_96600_76046.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_17_96601_76043.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_17_96601_76044.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_17_96601_76045.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_17_96601_76046.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_17_96602_76043.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_17_96602_76044.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_17_96602_76045.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_17_96602_76046.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_17_96603_76043.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_17_96603_76044.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_17_96603_76045.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_17_96603_76046.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_17_96604_76043.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_17_96604_76044.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_17_96604_76045.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_17_96604_76046.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_17_96607_76030.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_17_96607_76031.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_17_96607_76032.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_17_96607_76033.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_17_96608_76030.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_17_96608_76031.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_17_96608_76032.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_17_96608_76033.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_17_96609_76030.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_17_96609_76031.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_17_96609_76032.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_17_96609_76033.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_17_96610_76030.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_17_96610_76031.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_17_96610_76032.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_17_96610_76033.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_17_96611_76030.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_17_96611_76031.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_17_96611_76032.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_17_96611_76033.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_18_193200_152090.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_18_193201_152090.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_18_193217_152061.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_18_193217_152062.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_18_193217_152063.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_18_193218_152061.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_18_193218_152062.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_18_193218_152063.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_18_193218_152064.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_18_193219_152061.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_18_193219_152062.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_18_193219_152063.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_18_193219_152064.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_18_193220_152061.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_18_193220_152062.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_18_193220_152063.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_18_193220_152064.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_19_266494_319471.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_19_266494_319472.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_19_266495_319471.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_19_266495_319472.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_19_266496_319471.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_19_386436_304126.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_19_386437_304113.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_19_386437_304114.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_19_386437_304124.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_19_386437_304125.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_19_386437_304126.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_19_386438_304113.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_19_386438_304114.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_19_386438_304124.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_19_386438_304125.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_19_386438_304126.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_19_386439_304113.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_19_386439_304114.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_19_386439_304124.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_19_386439_304125.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_19_386439_304126.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_8_187_149.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_8_188_148.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_8_188_149.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_8_189_148.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_8_189_149.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_9_258_311.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_9_258_312.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_9_258_313.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_9_258_314.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_9_259_311.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_9_259_312.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_9_259_313.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_9_259_314.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_9_260_311.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_9_260_312.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_9_260_313.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_9_260_314.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_9_261_311.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_9_261_312.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_9_261_313.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_9_261_314.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_9_262_311.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_9_262_312.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_9_262_313.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_9_263_311.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_9_263_312.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_9_376_298.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_9_377_297.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_9_377_298.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_9_378_297.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/cache/26a7511794_9_378_298.png
+# Create directory /mnt/c/Users/HP/Desktop/login/BusTrackingApp/.buildozer/android/app/images/icons
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/images/icons/bus_ticket.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/images/icons/directions.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/images/icons/insurance.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/images/icons/location_live.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/images/icons/notification.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/images/icons/route.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/images/icons/search_direction.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/images/icons/user.png
+# Create directory /mnt/c/Users/HP/Desktop/login/BusTrackingApp/.buildozer/android/app/images/logo
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/images/logo/Logo.png
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/images/logo/new_logo.png
+# Create directory /mnt/c/Users/HP/Desktop/login/BusTrackingApp/.buildozer/android/app/images/UserImage
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/images/UserImage/citizenship.jpg
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/images/UserImage/identitycard.jpg
+# Copy /mnt/c/Users/HP/Desktop/login/BusTrackingApp/images/UserImage/profile.jpg
+# Package the application
+# project.properties updated
+# Run '/usr/bin/python3 -m pythonforandroid.toolchain apk --bootstrap sdl2 --dist_name myapp --name \'My Application\' --version 0.1 --package org.test.myapp --minsdk 21 --ndk-api 21 --private /mnt/c/Users/HP/Desktop/login/BusTrackingApp/.buildozer/android/app --permission INTERNET --android-entrypoint org.kivy.android.PythonActivity --android-apptheme @android:style/Theme.NoTitleBar --orientation portrait --window --copy-libs --arch arm64-v8a --arch armeabi-v7a --color=always --storage-dir="/mnt/c/Users/HP/Desktop/login/BusTrackingApp/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a" --ndk-api=21 --ignore-setup-py --debug'
+# Cwd /mnt/c/Users/HP/Desktop/login/BusTrackingApp/.buildozer/android/platform/python-for-android
+Listing '/mnt/c/Users/HP/Desktop/login/BusTrackingApp/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/dists/myapp/_python_bundle__arm64-v8a'...
+Listing '/mnt/c/Users/HP/Desktop/login/BusTrackingApp/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/dists/myapp/_python_bundle__arm64-v8a/_python_bundle'...
+Listing '/mnt/c/Users/HP/Desktop/login/BusTrackingApp/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/dists/myapp/_python_bundle__arm64-v8a/_python_bundle/modules'...
+Listing '/mnt/c/Users/HP/Desktop/login/BusTrackingApp/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/dists/myapp/_python_bundle__arm64-v8a/_python_bundle/site-packages'...
+Listing '/mnt/c/Users/HP/Desktop/login/BusTrackingApp/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/dists/myapp/_python_bundle__arm64-v8a/_python_bundle/site-packages/Kivy-2.1.0-py3.9.egg-info'...
+Listing '/mnt/c/Users/HP/Desktop/login/BusTrackingApp/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/dists/myapp/_python_bundle__arm64-v8a/_python_bundle/site-packages/_distutils_hack'...
+Listing '/mnt/c/Users/HP/Desktop/login/BusTrackingApp/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/dists/myapp/_python_bundle__arm64-v8a/_python_bundle/site-packages/android'...
+Listing '/mnt/c/Users/HP/Desktop/login/BusTrackingApp/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/dists/myapp/_python_bundle__arm64-v8a/_python_bundle/site-packages/certifi'...
+Listing '/mnt/c/Users/HP/Desktop/login/BusTrackingApp/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/dists/myapp/_python_bundle__arm64-v8a/_python_bundle/site-packages/certifi-2022.6.15.dist-info'...
+Listing '/mnt/c/Users/HP/Desktop/login/BusTrackingApp/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/dists/myapp/_python_bundle__arm64-v8a/_python_bundle/site-packages/jnius'...
+Listing '/mnt/c/Users/HP/Desktop/login/BusTrackingApp/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/dists/myapp/_python_bundle__arm64-v8a/_python_bundle/site-packages/jnius/src'...
+Listing '/mnt/c/Users/HP/Desktop/login/BusTrackingApp/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/dists/myapp/_python_bundle__arm64-v8a/_python_bundle/site-packages/jnius/src/org'...
+Listing '/mnt/c/Users/HP/Desktop/login/BusTrackingApp/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/dists/myapp/_python_bundle__arm64-v8a/_python_bundle/site-packages/jnius/src/org/jnius'...
+Listing '/mnt/c/Users/HP/Desktop/login/BusTrackingApp/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/dists/myapp/_python_bundle__arm64-v8a/_python_bundle/site-packages/kivy'...
+Listing '/mnt/c/Users/HP/Desktop/login/BusTrackingApp/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/dists/myapp/_python_bundle__arm64-v8a/_python_bundle/site-packages/kivy/core'...
+Listing '/mnt/c/Users/HP/Desktop/login/BusTrackingApp/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/dists/myapp/_python_bundle__arm64-v8a/_python_bundle/site-packages/kivy/core/audio'...
+Listing '/mnt/c/Users/HP/Desktop/login/BusTrackingApp/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/dists/myapp/_python_bundle__arm64-v8a/_python_bundle/site-packages/kivy/core/camera'...
+Listing '/mnt/c/Users/HP/Desktop/login/BusTrackingApp/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/dists/myapp/_python_bundle__arm64-v8a/_python_bundle/site-packages/kivy/core/clipboard'...
+Listing '/mnt/c/Users/HP/Desktop/login/BusTrackingApp/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/dists/myapp/_python_bundle__arm64-v8a/_python_bundle/site-packages/kivy/core/gl'...
+Listing '/mnt/c/Users/HP/Desktop/login/BusTrackingApp/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/dists/myapp/_python_bundle__arm64-v8a/_python_bundle/site-packages/kivy/core/image'...
+Listing '/mnt/c/Users/HP/Desktop/login/BusTrackingApp/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/dists/myapp/_python_bundle__arm64-v8a/_python_bundle/site-packages/kivy/core/spelling'...
+Listing '/mnt/c/Users/HP/Desktop/login/BusTrackingApp/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/dists/myapp/_python_bundle__arm64-v8a/_python_bundle/site-packages/kivy/core/text'...
+Listing '/mnt/c/Users/HP/Desktop/login/BusTrackingApp/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/dists/myapp/_python_bundle__arm64-v8a/_python_bundle/site-packages/kivy/core/video'...
+Listing '/mnt/c/Users/HP/Desktop/login/BusTrackingApp/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/dists/myapp/_python_bundle__arm64-v8a/_python_bundle/site-packages/kivy/core/window'...
+Listing '/mnt/c/Users/HP/Desktop/login/BusTrackingApp/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/dists/myapp/_python_bundle__arm64-v8a/_python_bundle/site-packages/kivy/data'...
+Listing '/mnt/c/Users/HP/Desktop/login/BusTrackingApp/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/dists/myapp/_python_bundle__arm64-v8a/_python_bundle/site-packages/kivy/data/fonts'...
+Listing '/mnt/c/Users/HP/Desktop/login/BusTrackingApp/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/dists/myapp/_python_bundle__arm64-v8a/_python_bundle/site-packages/kivy/data/glsl'...
+Listing '/mnt/c/Users/HP/Desktop/login/BusTrackingApp/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/dists/myapp/_python_bundle__arm64-v8a/_python_bundle/site-packages/kivy/data/images'...
+Listing '/mnt/c/Users/HP/Desktop/login/BusTrackingApp/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/dists/myapp/_python_bundle__arm64-v8a/_python_bundle/site-packages/kivy/data/keyboards'...
+Listing '/mnt/c/Users/HP/Desktop/login/BusTrackingApp/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/dists/myapp/_python_bundle__arm64-v8a/_python_bundle/site-packages/kivy/data/logo'...
+Listing '/mnt/c/Users/HP/Desktop/login/BusTrackingApp/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/dists/myapp/_python_bundle__arm64-v8a/_python_bundle/site-packages/kivy/deps'...
+Listing '/mnt/c/Users/HP/Desktop/login/BusTrackingApp/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/dists/myapp/_python_bundle__arm64-v8a/_python_bundle/site-packages/kivy/effects'...
+Listing '/mnt/c/Users/HP/Desktop/login/BusTrackingApp/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/dists/myapp/_python_bundle__arm64-v8a/_python_bundle/site-packages/kivy/eventmanager'...
+Listing '/mnt/c/Users/HP/Desktop/login/BusTrackingApp/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/dists/myapp/_python_bundle__arm64-v8a/_python_bundle/site-packages/kivy/extras'...
+Listing '/mnt/c/Users/HP/Desktop/login/BusTrackingApp/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/dists/myapp/_python_bundle__arm64-v8a/_python_bundle/site-packages/kivy/garden'...
+Listing '/mnt/c/Users/HP/Desktop/login/BusTrackingApp/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/dists/myapp/_python_bundle__arm64-v8a/_python_bundle/site-packages/kivy/graphics'...
+Listing '/mnt/c/Users/HP/Desktop/login/BusTrackingApp/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/dists/myapp/_python_bundle__arm64-v8a/_python_bundle/site-packages/kivy/graphics/cgl_backend'...
+Listing '/mnt/c/Users/HP/Desktop/login/BusTrackingApp/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/dists/myapp/_python_bundle__arm64-v8a/_python_bundle/site-packages/kivy/include'...
+Listing '/mnt/c/Users/HP/Desktop/login/BusTrackingApp/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/dists/myapp/_python_bundle__arm64-v8a/_python_bundle/site-packages/kivy/input'...
+Listing '/mnt/c/Users/HP/Desktop/login/BusTrackingApp/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/dists/myapp/_python_bundle__arm64-v8a/_python_bundle/site-packages/kivy/input/postproc'...
+Listing '/mnt/c/Users/HP/Desktop/login/BusTrackingApp/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/dists/myapp/_python_bundle__arm64-v8a/_python_bundle/site-packages/kivy/input/providers'...
+Listing '/mnt/c/Users/HP/Desktop/login/BusTrackingApp/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/dists/myapp/_python_bundle__arm64-v8a/_python_bundle/site-packages/kivy/lang'...

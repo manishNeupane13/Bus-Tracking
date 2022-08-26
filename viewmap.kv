@@ -1,0 +1,46 @@
+<MapBusview>
+    BoxLayout:
+        orientation: 'vertical'
+        BackNavigationKey:
+            left_action_items:[["arrow-left-bold-circle-outline",lambda x:root.callback(),"Back"]]
+            title: "Live Location View"
+            elevation:10
+            pos_hint: {"top":1} 
+        LocationView:
+            id:viewlocation
+            lat:27.686853899999964
+            lon:85.3460681327881
+            zoom: 10
+            on_zoom:
+                root.zoom =20  
+            BoxLayout:
+                pos_hint: {"top":1} 
+                orientation: 'horizontal'
+                padding:5
+                size_hint_max_y:1
+                MDTextField:
+                    id:routename 
+                    pos_hint: {"top":1}   
+                    padding: 5
+                    pos_hint: {'center_x': .5, 'center_y': .95}
+                    size_hint_x: None
+                    width:root.width-40
+                    hint_text: "Route List"
+                    on_focus: if self.focus: root.route_menu.open()
+                MDIconButton:
+                    icon: "alpha-x-circle"
+                    pos_hint: {"top":1}
+                    pos_hint: {'center_x': .5, 'center_y': .95}
+                    on_release: root.remove_location_marker()
+        
+            # on_lat:
+            #     self.start_getting_markets_in_fov()
+            # on_lon:
+            #     self.start_getting_markets_in_fov()  
+         
+            # MapMarkerPopup:
+            #     id:location_marker
+            #     source:"images//icons//bus.ico"
+            #     lat: 27.6869049
+            #     lon: 85.3480992
+            

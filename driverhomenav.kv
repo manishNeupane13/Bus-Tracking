@@ -1,0 +1,75 @@
+<DriverNavigation>
+    MDCard:
+        size_hint: None,None
+        size:root.width-50,root.height-50
+        pos_hint: {'center_x':0.5 , 'center_y':0.5 }
+        elevation:30
+        padding:25
+        spacing:40
+        orientation: 'vertical' 
+        MDLabel:
+            id:Welcome_label
+            text:"Bus Details"
+            font_size: 40
+            halign:'center'
+            size_hint_y: None
+            height:self.texture_size[1]
+            padding_y:15
+        MDTextField:
+            id:association_name
+            hint_text:"Bus_Association_Name"
+            font_size:18
+            mode:'rectangle'
+            color_mode:'accent'
+            pos_hint: {'center_x':0.5, 'y':0.70}
+            size_hint_x: 0.75
+            helper_text:'Required'
+            helper_text_mode:'on_error'
+            icon_right_color:app.theme_cls.primary_light
+            required:True
+        MDTextField:
+            id:bus_number
+            hint_text:"Bus_Number"
+            font_size:18
+            mode:'rectangle'
+            color_mode:'accent'
+            pos_hint: {'center_x':0.5, 'y':0.70}
+            size_hint_x: 0.75
+            helper_text:'Required'
+            helper_text_mode:'on_error'
+            icon_right_color:app.theme_cls.primary_light
+            required:True
+        # BoxLayout:
+        #     orientation:"vertical"
+        #     pos_hint: {'center_x':0.5,'y':0.7}
+    
+            # spacing:20
+            # MDTextField:
+            #     id: city_name
+            #     pos_hint: {'center_x': 0.5, 'center_y': .6}
+            #     size_hint_x: None
+            #     hint_text: "City Name"
+            #     on_focus: if self.focus: root.city.open()
+        MDTextField:
+            id: route_name
+            pos_hint: {'center_x': .5, 'center_y': .6}
+            size_hint_x: None
+            hint_text: "Route Name"
+            on_focus: if self.focus: root.route.open()
+        MDRoundFlatButton:
+            id:register
+            text:"Proceed"
+            font_size:16
+            pos_hint: {'center_x':0.5, 'center_y':0.7}
+            on_press:root.driver_database()
+            
+    
+    
+                
+
+
+    
+
+    # MDLabel:
+    #     font_style:'H1'
+    #     text:"WELcome to driver naviagation"

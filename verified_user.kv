@@ -1,0 +1,129 @@
+<VerifiedUser>
+    MDBoxLayout:
+        orientation: 'vertical'
+        padding:10
+        spacing:10
+        BackNavigationKey:
+            left_action_items:[["arrow-left-bold-circle-outline",lambda x:root.callback(),"Back"]]
+        MDBoxLayout:
+            orientation: 'horizontal'
+            pos_hint: {"top":1}
+            MDTabs:
+                id:main_tab                   
+
+                Tab:
+                    id:address_tab
+                    title: "Address"
+                    icon: "map-marker"
+                    orientation:'vertical'
+                    pos_hint:{"top":1}
+                    
+                    MDBoxLayout:
+                        pos_hint: {"top":1}
+                        orientation: 'vertical'
+                        pos_hint: {"center_x": .5, "center_y": .5}
+                        spacing:25
+                        ElementCard:
+                            padding:20
+                            orientation: 'vertical'
+                            MDLabel:
+                                text:"Current Address"
+                                font_size: 22
+                                font_style:"H5"
+                            ElementCard:
+                                DefaultLabel:
+                                    id:Countrylbl
+                                MDLabel:
+                                    id:Country
+                                    font_style:"H6"
+                                    halign:"center"
+                            ElementCard:
+                                DefaultLabel:
+                                    id:Provincelbl
+                                MDLabel:
+                                    id:Province
+                                    font_style:"H6"
+                                    halign:"center"
+                            ElementCard:
+                                DefaultLabel:
+                                    id:Districtlbl
+                                MDLabel:
+                                    id:District
+                                    font_style:"H6"
+                                    halign:"center"
+                            ElementCard:
+                                DefaultLabel:
+                                    id:Zonelbl
+                                MDLabel:
+                                    id:Zone 
+                                    font_style:"H6"
+                                    halign:"center"
+                            ElementCard:
+
+                                DefaultLabel:
+                                    id:Municipalitylbl
+                                MDLabel:
+                                    id:Municipality
+                                    font_style:"H6"
+                                    halign:"center"   
+                            ElementCard:
+                                        
+                                DefaultLabel:
+                                    id:Tolelbl
+                                MDLabel:
+                                    id:Tole
+                                    font_style:"H6"
+                                    halign:"center"
+                                
+                                                              
+                        
+                    
+                Tab:
+                    id:document_tab
+                    title: "Douments"
+                    icon: "file-document-multiple"
+                    orientation:'vertical'
+                    pos_hint:{"top":1}
+                    MDBoxLayout:
+                        pos_hint: {"top":1}
+                        orientation: 'vertical'
+                        pos_hint: {"center_x": .5, "center_y": .5}
+                        spacing:25            
+                        ElementCard:
+                            id:Citizenship
+                            orientation: 'vertical'
+                            MDLabel:
+                                text:"Citizenship Front"
+                                font_size: 22
+                                font_style:"H5"
+                            FitImage:
+                                id:citizenimage
+                                box_color: 1, 1, 1, .2
+                                pos_hint: {"center_x": .5, "center_y": .5}
+                                size_hint: None, None
+                                size: "150dp", "150dp"
+                        
+                        
+                            
+
+                        ElementCard:
+                            id:IdentityCard
+                            orientation: 'vertical'
+                            MDLabel:
+                                text:"Fare Discount Identity Card"
+                                font_size: 22
+                                font_style:"H5"
+                            FitImage:
+                                id:idcardimg
+                                box_color: 1, 1, 1, .2
+                                pos_hint: {"center_x": .5, "center_y": .5}
+                                size_hint: None, None
+                                size: "150dp", "150dp"
+
+                
+                            
+                            
+<DefaultLabel@MDLabel>
+    font_size: 22
+    font_style:"H5"
+    halign:"center"

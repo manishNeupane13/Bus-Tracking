@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fare Payment</title>
+  <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+  <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+</head>
+<body>
+<span>
+Total Fare =
+</span>
+{{amount}}
+<br>
+<span>
+Transaction Id =
+</span>
+{{tranid}}
+<form action="https://uat.esewa.com.np/epay/main" method="POST">
+    <input value="{{amount}}" name="tAmt" type="hidden">
+    <input value="{{amount}}" name="amt" type="hidden">
+    <input value="0" name="txAmt" type="hidden">
+    <input value="0" name="psc" type="hidden">
+    <input value="0" name="pdc" type="hidden">
+    <input value="EPAYTEST" name="scd" type="hidden">
+    <input value="{{tranid}}" name="pid" type="hidden">
+    <input value="http://merchant.com.np/page/esewa_payment_success?q=su" type="hidden" name="su">
+    <input value="http://merchant.com.np/page/esewa_payment_failed?q=fu" type="hidden" name="fu">
+    <input value="Submit" type="submit">
+</form>
+</body>
+</html>

@@ -1,0 +1,127 @@
+<RegisterScreen>
+    canvas:
+        Color:
+            rgba:222/255, 247/255,250/255,1
+        Rectangle:
+            pos:self.pos
+            size:self.size
+
+    MDCard:
+        size_hint: None,None
+        size:root.width-50,root.height-50
+        pos_hint: {'center_x':0.5 , 'center_y':0.5 }
+        elevation:30
+        padding:25
+        spacing:40
+        orientation: 'vertical'
+        
+        MDLabel:
+            text:'Registration'
+            font_style:'H5'
+            font_name:'verdana'
+            pos_hint: {'center_x': 0.5,'center_y': 0.9}
+            halign:"center"
+            color:255/255, 125/255, 80/255,1
+        MDTextField:
+            id:driver_register_full_name
+            mode:'rectangle'
+            color_mode:'accent'
+            hint_text:'Full Name'
+            pos_hint: {'center_x':0.5 , 'y':0.83 }
+            size_hint_x: 0.75
+            helper_text:'Required'
+            helper_text_mode:'on_error'
+            icon_right_color:app.theme_cls.primary_light
+            required:True
+        MDTextField:
+            id:driver_email
+            mode:'rectangle'
+            color_mode:'accent'
+            hint_text:'E-Mail'
+            pos_hint: {'center_x':0.5, 'y':0.70}
+            size_hint_x: 0.75
+            helper_text:'Required'
+            helper_text_mode:'on_error'
+            icon_right_color:app.theme_cls.primary_light
+            required:True
+            
+        MDTextField:
+            id:driver_register_number
+            mode:'rectangle'
+            color_mode:'accent'
+            hint_text:'Mobile Number'
+            pos_hint: {'center_x':0.5, 'y':0.70}
+            size_hint_x: 0.75
+            helper_text:'Required'
+            helper_text_mode:'on_error'
+            icon_right_color:app.theme_cls.primary_light
+            required:True
+        MDTextField:
+            id:driver_register_password
+            mode:'rectangle'
+            password:True
+            color_mode:'accent'
+            hint_text:'Password'
+            pos_hint: {'center_x':0.5 , 'y':0.57}
+            size_hint_x: 0.75
+            helper_text:'Required'
+            helper_text_mode:'on_error'
+            icon_right_color:app.theme_cls.primary_light
+            required:True
+        FloatLayout:
+            pos_hint:{"center_x":0.5,"center_y":0.44}
+        
+            MDLabel:
+                text:'Service User'
+                font_size:18
+                font_name:'verdana'
+                pos_hint: {'x':0.25, 'center_y':0.5}
+                color:255/255, 125/255, 80/255,1
+            UserCheckBox:
+                id:service_user
+                text:"Service_User"        
+                pos_hint:{'x':0.65, 'center_y':0.5}
+                on_active:
+                    root.user_category_value=self.text
+        
+            # MDLabel:
+            #     text:'Service Provider'
+            #     font_size:18
+            #     font_name:'verdana'
+            #     pos_hint: {'x':0.50, 'center_y':0.5}
+            #     color:18/255,20/255,73/255,1
+            # UserCheckBox:
+            #     id:service_provider
+            #     text:"Service_Provider"        
+            #     pos_hint:{'x':0.75, 'center_y':0.5}
+            #     on_active:
+            #         root.user_category_value=self.text
+
+            
+        MDFillRoundFlatButton:
+        
+            id:driver_register_proceed_btn
+            disabled:False
+            text:'Proceed'
+            md_bg_color:app.theme_cls.primary_dark
+            font_size: 22
+            text_color:1,1,1,1
+            pos_hint: {'center_x':0.5, 'center_y':0.30 }
+            on_press:
+                root.register_driver()
+                # root.manager.current='userlogin'
+                # root.manager.transition.direction='left'
+        MDFloatingActionButton:
+            # icon:'android'
+            icon:'account-arrow-left'
+            md_bg_color:app.theme_cls.primary_light
+            pos_hint: {'center_x':0.5, 'center_y':0.15 }
+            on_press:
+                root.manager.current='welcomescreen'
+                root.manager.transition.direction='right'
+<UserCheckBox@CheckBox>:
+    # active:True
+    group:'usercategory'
+    color:0,0,0,1
+    size_hint:None,None
+    size:dp(48),dp(48)

@@ -1,0 +1,121 @@
+<LoginScreen>
+    canvas:
+        Color:
+            rgba:173/255, 179/255, 177/255,1
+        Rectangle:
+            pos:self.pos
+            size:self.size
+    MDCard:
+        size_hint: None,None
+        size:root.width-50,root.height-50
+        pos_hint: {'center_x':0.5 , 'center_y':0.5 }
+        elevation:30
+        padding:25
+        spacing:40
+        orientation: 'vertical'
+        MDLabel:
+            text:'LOGIN'
+            font_style:'H5'
+            halign:"center"
+            font_name:'verdana'
+            pos_hint: {'center_x':0.50, 'center_y':0.90 }
+            color:255/255, 125/255, 80/255,1
+            size_hint_x: 0.75
+
+        MDTextField:
+            id:driver_email
+            mode:'rectangle'
+            color_mode:'accent'
+            hint_text:'E-Mail'
+            pos_hint: {'center_x':0.5 , 'y':0.65 }
+            size_hint_x: 0.75
+            helper_text:'Required'
+            helper_text_mode:'on_error'
+            icon_right:'account'
+            icon_right_color:app.theme_cls.primary_light
+            required:True
+
+        MDTextField:
+            id:driver_login_username
+            mode:'rectangle'
+            color_mode:'accent'
+            hint_text:'Mobile Number'
+            pos_hint: {'center_x':0.5 , 'y':0.65 }
+            size_hint_x: 0.75
+            helper_text:'Required'
+            helper_text_mode:'on_error'
+            icon_right: "phone"
+            icon_right_color:app.theme_cls.primary_light
+            required:True
+            
+            
+        MDTextField:
+            id:driver_login_password
+            mode:'rectangle'
+            password:True
+            color_mode:'accent'
+            hint_text:'Password'
+            pos_hint: {'center_x':0.5, 'y':0.50 }
+            size_hint_x: 0.75
+            helper_text:'Required'
+            helper_text_mode:'on_error'
+            icon_right:'eye-off'
+            icon_right_color:app.theme_cls.primary_light
+            required:True
+        FloatLayout:
+            pos_hint:{"center_x":0.5,"center_y":0.44}
+        
+            MDLabel:
+                text:'Service User'
+                font_size:18
+                font_name:'verdana'
+                pos_hint: {'x':0.25, 'center_y':0.5}
+                color:255/255, 125/255, 80/255,1
+            UserCheckBox:
+                id:service_user
+                text:"Service_User"        
+                pos_hint:{'x':0.65, 'center_y':0.5}
+                on_active:
+                    root.user_category_value=self.text
+        
+            # MDLabel:
+            #     text:'Service Provider'
+            #     font_size:18
+            #     font_name:'verdana'
+            #     pos_hint: {'x':0.50, 'center_y':0.5}
+            #     color:1/255, 23/255, 18/255,1
+            # UserCheckBox:
+            #     id:service_provider
+            #     text:"Service_Provider"        
+            #     pos_hint:{'x':0.75, 'center_y':0.5}
+            #     on_active:
+            #         root.user_category_value=self.text
+        MDFillRoundFlatButton:
+            # icon:'android'
+            id:driver_login_proceed_btn
+            # disabled:True
+            text:'Proceed'
+            md_bg_color:app.theme_cls.primary_dark
+            font_size: 22
+            text_color:1,1,1,1
+            pos_hint: {'center_x':0.5, 'center_y':0.35 }
+            on_press:
+                app.user_id=root.ids.driver_login_username.text
+                root.check_login()
+        MDTextButton:
+            text:"Forgot Password"
+            color: 230/255, 23/255, 47/255,1
+            pos_hint: {'center_x':0.5, 'center_y':0.35 }
+            font_size: 22
+            font_style:"H6"
+            on_press:root.reset_password()
+
+        MDFloatingActionButton:
+            # icon:'android'
+            icon:'account-arrow-left'
+            md_bg_color:app.theme_cls.primary_light
+            pos_hint: {'center_x':0.5, 'center_y':0.2 }
+            on_press:
+                root.manager.current='welcomescreen'
+                root.manager.transition.direction='right'
+

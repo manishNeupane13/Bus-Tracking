@@ -1,0 +1,121 @@
+<WelcomeScreen>
+    name:'welcomescreen'
+    md_bg_color:app.theme_cls.bg_light
+    # spacing:30
+    
+    BoxLayout:
+        orientation:"vertical"
+        pos_hint: {"top":1}
+        BoxLayout:
+            size_hint_y:None
+            pos_hint: {"top":1}
+            padding:5
+            height:self.parent.height/2
+            
+            FitImage:
+                source:'images//logo//new_logo.png'
+                pos_hint:{"top":1 }
+                radius:36,36,36,36
+        BoxLayout:
+            orientation: 'vertical'
+            padding:25
+            spacing:25
+            pos_hint: {'center_x':0.5, 'center_y':0.5}
+            
+            ElementCard: 
+                md_bg_color:app.theme_cls.primary_dark
+                padding:10
+                pos_hint: {'center_x':0.5, 'center_y':0.5 }
+
+                MDFillRoundFlatIconButton:
+                    icon: "login-variant"
+                    text:'Sigin'
+                    md_bg_color:app.theme_cls.primary_dark
+                    font_style:"H5"
+                    size:self.parent.width,self.parent.height
+                    text_color:1,1,1,1
+                    pos_hint: {'center_x':0.5, 'center_y':0.5 }
+                    on_press:
+                        root.manager.current='userlogin'
+                        # root.manager.current='userhome'
+                        root.manager.transition.direction='left'
+            ElementCard:
+                md_bg_color:app.theme_cls.primary_dark
+                padding:10
+                pos_hint: {'center_x':0.5, 'center_y':0.5 }
+            
+                MDFillRoundFlatIconButton:
+                    icon: 'location-enter'
+                    text:'Signup'
+                    font_style:"H5"
+                    md_bg_color:app.theme_cls.primary_dark
+                    text_color:1,1,1,1
+                    size: self.parent.width,self.parent.height
+                    pos_hint: {'center_x':0.5, 'center_y':0.5 }
+                    on_press:
+                        root.manager.current='userregister'
+                        root.manager.transition.direction='left'
+        BoxLayout:
+            orientation:'horizontal'
+            padding:15
+            pos_hint: {'bottom':1}
+            ElementCard:
+            
+
+
+            
+                
+            
+
+
+
+    # ElementCard:
+            
+            
+                    
+        # MDCard:
+        #     size_hint: None,None
+              
+        #     # size:root.width-20,root.height-50
+        #     size:self.parent.width-80,self.parent.height-80
+        #     pos_hint: {'center_x':0.5 , 'center_y':0.5 }
+        #     elevation:30
+        #     padding:25
+        #     spacing:40
+        #     orientation: 'vertical' 
+        
+                
+        # MDFillRoundFlatButton:
+        #     # icon:'android'
+        #     text:'Sigin'
+        #     md_bg_color:app.theme_cls.primary_dark
+        #     font_size: 22
+        #     text_color:1,1,1,1
+        #     pos_hint: {'center_x':0.5, 'center_y':0.55 }
+        #     on_press:
+        #         root.manager.current='userlogin'
+        #         root.manager.transition.direction='left'
+        # MDFillRoundFlatButton:
+        #     # icon:'android'
+        #     text:'Signup'
+        #     md_bg_color:app.theme_cls.primary_dark
+        #     font_size: 22
+        #     text_color:1,1,1,1
+        #     pos_hint: {'center_x':0.5, 'center_y':0.35 }
+        #     on_press:
+        #         root.manager.current='userregister'
+        #         root.manager.transition.direction='left'
+
+# <ElementCard@MDCard>:
+#     md_bg_color:69/255,55/255,86/255,1
+#     padding:dp(15)
+#     spacing:dp(15)
+#     radius:dp(25)
+#     ripple_behavior: True
+#     orientation:"vertical"
+#     pos_hint: {'bottom': 1.0}
+#     padding:20
+#     spacing:40
+#     size_hint_y:0.05
+
+
